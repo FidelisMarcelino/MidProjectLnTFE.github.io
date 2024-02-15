@@ -8,14 +8,22 @@ body{
     background-color: #DCF2F1;
 }
 
+body::after{
+    content: '';
+    background-image: url(./Asset/Garis.png);
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
 .logo img{
     width: 65px;
     height: auto;
     border-radius: 70%;
-}
-
-.container{
-    padding: 20px 80px 20px 80px;
 }
 
 .container{
@@ -25,7 +33,11 @@ body{
     background-color: #7FC7D9;
     padding: 10px;
     flex-direction: row;
-    position: inherit;
+    position: fixed;
+    width: 98.5%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .navigate{
@@ -36,6 +48,7 @@ body{
 
 .navigate ul{
     list-style-type: none;
+    display: inline;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,6 +70,16 @@ body{
 .navigate a:hover{
     text-decoration: underline;
     color: #DCF2F1;
+}
+
+.button button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button button a:hover{
+    text-decoration: none;
+    color: #11235A;
 }
 
 .button button{
@@ -93,12 +116,23 @@ body{
 
 .welcome-section{
     text-align: center;
+    animation: muncul 3s linear;
+
 }
 
 .home h2{
     color: #000000;
     font-size: 50px;
     text-align: center;
+}
+
+@keyframes muncul{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .home h2 span{
@@ -224,6 +258,24 @@ hr{
     padding: 1px;
 }
 
+.lower-section .gear img{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+    animation: spinning 3s infinite;
+}
+
+@keyframes spinning{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .lower-section{
     display: flex;
     flex-wrap: wrap;
@@ -315,12 +367,14 @@ hr{
     margin: 10px 0px 10px 0px;
 }
 
+/* CONTACT */
+
 .wrapper2 {
-    margin: 80px 270px 80px;
+    margin: 160px 270px 80px;
     padding: 0px 10px 30px 10px;
     width: auto;
     height: auto;
-    background-color: rgba(135, 206, 250, 0.3);
+    background-color: rgba(135, 206, 250, 0.7);
     border-radius: 24px;
 }
 
@@ -409,21 +463,21 @@ hr{
 }
 
 .wrapper3{
-    margin: 0px 20  px 10px 0px;
+    margin: 0px 10px 10px 0px;
 }
 
 .wrapper3 p{
     color: #11235A;
     display: flex;
     justify-content: right;
-    padding: 0% 3px 0px 0px;
+    padding: 0% 10px 0px 0px;
     font-weight: 700;
     font-size: 15px;
 }
 
 .wrapper3 .logos img{
     height: 30px;
-    padding: 10px 10px 1    0px;
+    padding: 10px 10px 10px;
 }
 
 .wrapper3 .logos{
