@@ -463,7 +463,11 @@ hr{
 }
 
 .wrapper3{
+<<<<<<< HEAD
     margin: 0px 10px 10px 0px;
+=======
+    margin: 0px 20px 10px 0px;
+>>>>>>> fa8d32e6357bfb9a59fb73add1cd08d56a5d1cdb
 }
 
 .wrapper3 p{
