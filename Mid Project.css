@@ -528,21 +528,21 @@ hr{
 }
 
 /* Ukuran Tablet */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1080px){
     .top-section{
         display:flex;
         flex-direction: row;
         justify-content: center;
         align-items:center;
-        height: 70vh;
+        height: 45vh;
     }
 
     .desc{
-        margin: 50px 150px 0px 100px;
+        margin: 0px 150px 0px 100px;
     }
 
     .foto{
-        margin: 20px 80px 0px 0px;
+        margin: 0px 80px 0px 0px;
     }
 
     .lower-section{
@@ -551,10 +551,6 @@ hr{
         justify-content: space-around;
         align-items:center;
         margin-top: 250px;
-    }
-
-    .lower-section .gear img{
-        position: absolute;
     }
 
     .card-content{
