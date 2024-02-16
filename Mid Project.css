@@ -730,7 +730,7 @@ hr{
     }
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 246px){
     .navigate{
         display: none;
         flex-direction: row;
@@ -767,7 +767,7 @@ hr{
         border-top: 2px solid #000;
         margin-bottom: 200px;
         margin-top: 100px;
-        width: 110%;
+        width: 165%;
     }
 
     .top-section{
@@ -800,7 +800,7 @@ hr{
     /* CONTACT */
 
     .wrapper2 {
-        margin: 160px -10px 80px 25px;
+        margin: 160px -150px 80px 10px;
         padding: 0px 10px 30px 10px;
         width: auto;
         height: auto;
@@ -842,14 +842,14 @@ hr{
     }
 
     .wrapper3{
-        margin: 0px -10px 5px 0px;
+        margin: 0px -140px 5px 0px;
     }
 
     .footer{
         background-color: #ccc;
         border-radius: 100px 100px 0px 0px;
         padding: 5px;
-        width: 108%;
+        width: 160%;
         text-align: center;
     }
 }
