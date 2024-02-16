@@ -544,6 +544,24 @@ hr{
     .foto{
         margin: 20px 80px 0px 0px;
     }
+
+    .lower-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        margin-top: 250px;
+    }
+
+    .lower-section .gear img{
+        position: absolute;
+    }
+
+    .card-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
     
     /* CONTACT */
 
@@ -647,7 +665,6 @@ hr{
 
     .lower-section{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-around;
         align-items:center;
